@@ -20,16 +20,16 @@ Apa itu MVC ?, MVC (model,view,control)
 **Konsep routing
 Konsep routing. routing adalah mekanisme untuk menghubungkan URL (alamat yang diakses oleh pengguna) dengan logika program yang ada di aplikasi, di mana dari proses routing ini kita akan bisa memetakan dari dan harus kemana alur aplikasi laravel, 
 
-**Fungsi routing
+## Fungsi routing
     1 . Mengarahkan Request – setiap request (GET, POST, PUT, DELETE) yang masuk akan diarahkan ke Controller atau Closure tertentu.
     2. Menentukan Response – routing bisa mengembalikan view, JSON, redirect, atau data lain.
     3. Mengatur Struktur URL – membuat URL yang rapi dan mudah dibaca.
 
-**Fungsi middlaware
+## Fungsi middlaware
 Middleware adalah lapisan perantara antara request (permintaan dari user/browser) dan aplikasi Laravel.
 Setiap request yang masuk akan melewati middleware sebelum diteruskan ke route/controller. middleware biasa digunakan untuk menyebut sebuah perangkat lunak yang berperan sebagai "penengah" antara sebuah aplikasi dengan aplikasi lain untuk mempermudah proses integrasi antara aplikasi-aplikasi tersebut. Dalam konteks Laravel, Middleware merupakan sebuah Class khusus yang berperan sebagai "penengah" antara request yang masuk dengan Controller yang dituju. Secara umum, prinsip kerja Middleware adalah mencegat request yang masuk untuk kemudian diproses terlebih dahulu sebelum diberikan kepada Controller yang dituju atau diarahkan ke Controller yang lain. Dengan menggunakan fitur ini, kita dapat membuat komponen yang reusable untuk melakukan pekerjaan-pekerjaan tersebut.
 
-**Fungsi utama middleware
+## Fungsi utama middleware
     1. Autentikasi (Authentication)
        Memastikan user sudah login sebelum mengakses halaman tertentu.
 
@@ -48,7 +48,7 @@ Setiap request yang masuk akan melewati middleware sebelum diteruskan ke route/c
     5. Logging dan Monitoring
        Bisa mencatat setiap request yang masuk (IP address, waktu, dll.) untuk keperluan audit.
 
-**cara Laravel Menangani Request & Response
+## cara Laravel Menangani Request & Response
 
     1. User Mengirim Request
        User mengetik URL atau mengirim form di browser, kemudian browser mengirim HTTP Request ke server.
@@ -74,12 +74,12 @@ Setiap request yang masuk akan melewati middleware sebelum diteruskan ke route/c
     8. Mengirim Response ke Browser
     Response dikirim balik ke user dan browser menampilkan halaman atau data sesuai hasil.
 
-**Peran controller dan view
+## Peran controller dan view
     1. controller -> controller adalah otak dari aplikasi atau bagian yang mengatur logika bisnis, yang dimana dia akan menerima request dari route, memproses data, mengatur alur aplikasi, dan mengirim data ke view untuk di tampilkan
 
     2. view -> view adalah wajah dari aplikasi atau bagian yang menampilkan hasi ke user/pengguna, yang dimana dia akan menampilkan data yang dikirim oleh controller, Menyediakan form input, tabel, atau tampilan lain untuk user, dan Mengatur tata letak (layout) dan desain (HTML + CSS).
 
-**Fungsi blade templete engine
+## Fungsi blade templete engine
     1. Menyediakan cara menulis view yang bersih, cepat, dan terstruktur.
     2. Mendukung pewarisan template sehingga halaman lebih konsisten.
     3. Menyediakan kontrol alur (if, loop) yang lebih mudah dibaca.
